@@ -1,0 +1,29 @@
+*, *::after, *::before {
+    font-family: Roboto, "Helvetica Neue", "sans-serif";
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+body {
+    background-color: whitesmoke;
+    height: 100%;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+}
+
+.question li{
+    font-size: 1.3em;
+    font-weight: 800;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.options ul {
+    padding-left: 10px;
+}
+
+.options ul li{
+    list-style-type: none;
+}

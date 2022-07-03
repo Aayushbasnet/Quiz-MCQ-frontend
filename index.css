@@ -10,20 +10,36 @@ body {
     font-size: 16px;
     margin: 0;
     padding: 0;
-    color: #333333;
+    color: #000000;
 }
 
 .question li{
     font-size: 1.3em;
     font-weight: 800;
-    color: #000000;
+    color: #333333;
     margin-bottom: 15px;
 }
 
-.options ul {
+.option-list ul {
     padding-left: 10px;
 }
 
-.options ul li{
+.option-list ul li{
     list-style-type: none;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.option{
+    margin-bottom: 10px;
+}
+
+.mcq-card{
+    height: auto;
+    padding: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #aaaa;
+    -webkit-box-shadow: -3px 4px 8px 0px rgba(125,125,125,0.5); 
+    box-shadow: -3px 4px 8px 0px rgba(125,125,125,0.5);
+    border-bottom: 5px solid #3490dc;
 }

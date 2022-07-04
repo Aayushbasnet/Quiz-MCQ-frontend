@@ -114,3 +114,87 @@ body {
     border-radius: 50%;
     background: #ffffffff;
 }
+
+/* view answer button */
+/* styling view-answer button */
+.view-answer {
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+  }
+  /* add shadow, border color when hovering and focusing view-answer button */
+  .view-answer:hover,
+  .view-answer:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+  }
+  /* moving view-answer button vertically after hovering */
+  .view-answer:hover {
+    transform: translateY(-1px);
+  }
+  /* giving some effect to view-answer button after being clicked */
+  .view-answer:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+  }
+
+/* correct solution box */
+/* hiding the correct solution box until view-answer button is pressed */
+.correct-solution-box{
+    display: none;
+}
+/* styling correct solution row */
+.correct-solution-box .row{
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    background-color: white;
+    border-bottom: 4px solid #eee;
+}
+
+.correct-solution-text{
+    padding-bottom: 25px;
+    border-bottom: 2px double #aaaa;
+}
+/* styling correct-solution-link */
+.correct-solution-link{
+    margin-top: 25px;
+    display: block;
+    color: #000000;
+    font-size: 1.1em;
+    font-weight: normal;
+}
+.correct-solution-link a{
+    text-decoration: none;
+    width: fit-content;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.correct-solution-link a:hover{
+    box-shadow: -3px 4px 8px 0px rgba(125,125,125,0.5);
+    transition: 0.3s ease-in-out;
+}
